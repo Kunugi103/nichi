@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>助産院 日々</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Kosugi Maru', sans-serif;
+      background: #fff6f8;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      background-color: #fffefc;
+    }
+    header {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #e28ca8;
+      margin-bottom: 0.2rem;
+    }
+    .location {
+      text-align: center;
+      font-size: 1rem;
+      color: #777;
+      margin-bottom: 1.5rem;
+    }
+    .calendar-title {
+      text-align: center;
+      font-size: 1.4rem;
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+    .calendar img {
+      width: 100%;
+      max-width: 360px;
+      height: auto;
+      display: block;
+      margin: 0 auto 2rem;
+      border-radius: 8px;
+    }
+    .slideshow {
+      overflow: hidden;
+      position: relative;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      border-radius: 12px;
+    }
+    .slide-container {
+      display: flex;
+      width: 400%;
+      animation: slide 24s infinite;
+    }
+    .slide {
+      flex: 0 0 100%;
+    }
+    .slide img {
+      height: 200px;
+      object-fit: contain;
+
+      width: 100%;
+      border-radius: 12px;
+    }
+    @keyframes slide {
+      0% { transform: translateX(0%); }
+      20% { transform: translateX(0%); }
+      25% { transform: translateX(-100%); }
+      45% { transform: translateX(-100%); }
+      50% { transform: translateX(-200%); }
+      70% { transform: translateX(-200%); }
+      75% { transform: translateX(-300%); }
+      95% { transform: translateX(-300%); }
+      100% { transform: translateX(0%); }
+    }
+    .section {
+      text-align: center;
+      padding: 1rem 0;
+    }
+    .section h2 {
+      color: #e28ca8;
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
+    }
+    .menu-list {
+      list-style: none;
+      padding: 0;
+      font-size: 1.1rem;
+      line-height: 2;
+    }
+    .menu-list li {
+      margin: 0.2rem 0;
+    }
+    .contact-info {
+      font-size: 1.1rem;
+      color: #444;
+      margin-bottom: 1rem;
+    }
+    .contact-button {
+      display: inline-block;
+      padding: 0.6rem 1.2rem;
+      background-color: #e28ca8;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    .links {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .icon {
+      width: 36px;
+      vertical-align: middle;
+      margin-right: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>助産院 日々</header>
+    <div class="location">アクセス：長与駅から徒歩5分</div>
+
+    <div class="calendar-title">今月の予定</div>
+    <div class="calendar">
+      <img src="calendar.png" alt="2025年6月予定" />
+    </div>
+
+    <div class="slideshow" style="margin-top: 2rem; margin-bottom: 3rem;">
+      <div class="slide-container">
+        <div class="slide"><img src="bear1.png" alt="ぬいぐるみと花" /></div>
+        <div class="slide"><img src="room.png" alt="室内1" /></div>
+        <div class="slide"><img src="cushions.png" alt="クッション" /></div>
+        <div class="slide"><img src="kitchen.png" alt="キッチン" /></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>ごあいさつ</h2>
+      <p>助産院 日々は、産前・産後の心とからだをやさしく整える空間です。<br>
+      お母さんと赤ちゃんに寄り添い、ゆったりとした時間をお過ごしいただけるようサポートしています。</p>
+    </div>
+
+    <div class="section">
+      <h2>産後ケア MENU</h2>
+      <ul class="menu-list">
+        <li>・母乳育児支援</li>
+        <li>・育児相談</li>
+        <li>・沐浴（※3ヶ月まで）</li>
+        <li>・休息</li>
+        <li>・温活</li>
+        <li>・オイルマッサージ（30分 2,000円 / 60分 4,000円）</li>
+        <li>・その他ご相談に応じます</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>お問い合わせ</h2>
+      <div class="contact-info">
+        📧 メール：info@nichinichi.jp<br>
+        📞 電話：090-1234-5678
+      </div>
+      <a class="contact-button" href="https://docs.google.com/forms/d/e/1FAIpQLSefvyVE1pQmp4iRvvZ1L2I_Xilb5-YvqFrbvaLIIRohj9oMcA/viewform?usp=sf_link" target="_blank">お問い合わせフォームはこちら</a>
+    </div>
+
+    <div class="links">
+      <a href="https://www.instagram.com/nichinichi.mw/?next=%2Fkunugi_sander%2F" target="_blank">
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">Instagram
+      </a>
+      <a href="https://page.line.me/894ywoxl" target="_blank">
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/512/2111/2111498.png" alt="LINE">LINE
+      </a>
+    </div>
+  </div>
+</body>
+</html>
